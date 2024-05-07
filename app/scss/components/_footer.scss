@@ -1,0 +1,59 @@
+.footer{
+    padding-top: 140px;
+
+    &__inner{
+        @include flex-space-btw;
+        padding: 60px 0px 115px 0px;
+
+        &-center{
+            @include flex-center;
+            gap: 70px;
+
+            .nav-menu{
+
+                &-list{
+                    @include flex-center;
+                    gap: 30px;
+
+                    .menu-list__link{
+                        position: relative;
+                        padding-bottom: 7px;
+                        @include font-text;
+                        font-size: 16px;
+                        transition: all .4s ease-in-out;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            bottom: 0;
+                            left: 0;
+                            width: 0%;
+                            opacity: 0;
+                            height: 1px;
+                            background-color: $primary-color;
+                            transition: all .4s ease-in-out;
+                        }
+                        &:hover::after{
+                            opacity: 1;
+                            width: 100%;
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .social-menu{
+            @include flex-center;
+            gap: 30px;
+
+            &__link{
+                @include social-item;
+                transition: all .3s ease-in-out;
+                
+                &:hover{
+                    transform: translateY(-5px) scale(1.05);
+                    filter: contrast(150%);
+                }
+            }
+        }
+    }
+}

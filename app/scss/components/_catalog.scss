@@ -1,0 +1,144 @@
+.catalog{
+    padding-top: 90px;
+
+    &-title-box{
+        @include flex-space-btw;
+        width: 100%;
+
+        &__title{
+            @include font-link;
+            font-size: 36px;
+            line-height: 130%;
+        }
+        &__btn{
+            @include button;
+            padding: 13px 40px 15px 40px;
+            z-index: 99;
+            transition: all .3s ease-in-out;
+            &:hover{
+                border-color:$primary-color;
+            }
+        }
+        &__btn-close{
+            position: relative;
+            display: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 2px;
+            transition: all .3s ease-in-out;
+            &:hover{
+                transform: scale(1.2);
+            }
+
+            .btn-close__item{
+                position: absolute;
+                top:0;
+                left: 0;
+                width: 18px;
+                height: 2px;
+                background: $primary-color;
+            }
+            .btn-close__item:nth-child(1){
+                transform: rotate(45deg);
+            }
+            .btn-close__item:nth-child(2){
+                transform: rotate(-45deg);
+            }
+
+        }
+    }
+    &-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 30px;
+        max-width: 100%;
+        justify-content: center;
+        align-content: center;
+        .catalog-grid__item{
+            position: relative;
+            @include bg-options;
+            padding: 20px;
+            width: 270px;
+            height: 350px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover{
+                transform: translateY(20px);
+            }
+            .item-text{
+                position: absolute;
+                bottom: 20px;
+                left: 20px;
+                right: 20px;
+            .item-text-top__wrapper{
+                @include flex-space-btw;
+                row-gap: 10px;
+                
+                .item-text-top__title{
+                    @include font-link;
+                    font-size: 18px;
+                    line-height: 145%;
+                    transition: transform .4s ease-in-out;
+                   
+                }
+                .item-text-top__price{
+                    font-size: 16px;
+                    @include grid-font;
+                    transition: transform .4s ease-in-out;
+                }
+            }
+            .item-text-bot__wrapper{
+                @include flex-space-btw;
+                .item-text-bot__describtion{
+                    font-weight: 400;
+                    font-size: 13px;
+                    @include font-text;
+                    color:$swiper-color-text;
+                   
+                }
+                .item-text-bot__size{
+                    font-weight: 400;
+                    font-size: 13px;
+                    @include grid-font;
+                    color:$swiper-color-text;
+                }
+            }
+        }
+     
+    }
+    }
+    .pagination-list{
+        position: relative;
+        padding-top: 60px;
+        @include flex-center;
+        gap: 10px;
+        width: 100%;
+
+        &__link{
+            @include font-link;
+            font-size: 18px;
+            font-family: $text-family;
+        }
+        &__item-line{
+            display: block;
+            width: 18px;
+            height: 1px;
+            background-color: $primary-color;
+        }
+        &__nav-btns{
+            @include flex-center;
+            gap: 32px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+.catalog-grid__item:hover .item-text-top__wrapper > .item-text-top__title{
+    transform: scale(1.2);
+}
+.catalog-grid__item:hover .item-text-top__wrapper > .item-text-top__price{
+    transform: scale(1.2);
+}

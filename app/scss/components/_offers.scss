@@ -1,0 +1,46 @@
+.offers{
+    padding-top:140px;
+    padding-bottom: 140px;
+        &__wrapper{
+            @include flex-space-btw;
+            padding-left: 100px;
+            .offers-text-block{
+                padding: 100px 0px 100px;
+                display: inline-block;
+                max-width: 350px;
+                
+                &__title{
+                    @include font-link;
+                    font-size: 32px;
+                    line-height: 130%;
+                }
+                &__text{
+                    @include font-text;
+                    margin: 30px 0px 20px 0px;
+                    font-size: 18px;
+                    line-height: 145%;
+                    max-width: 328px;
+                    display: inline-block;
+                }
+                &__btn{
+                    @include button;
+                    padding: 13px 28px 15px 28px;
+                    transition: all .4s ease-in-out;
+                    &:hover{
+                     background-color: $border-color-btn;
+                    }
+                }
+                p + p{
+                    margin: 0px 0px 45px 0px;
+                }
+            }
+        
+            .offers-image-block{
+                display: block;
+                width: 670px;
+                height: 451px;
+            }
+        }
+}
+
+

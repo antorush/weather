@@ -1,0 +1,65 @@
+.hero{
+    padding: 70px 0px;
+
+    &__wrapper{
+        @include flex-center;
+        align-items: flex-start;
+        gap: 48px;
+        padding: 0px 70px;
+
+        &-image{
+            display: block;
+            max-width: 330px;
+
+            .wrapper-image__item{
+                display: block;
+                width: 330px;
+                height: 422px;
+                @include bg-options;
+                background-size: contain;
+            }
+            .wrapper-image__link{
+                transition: all .3s ease-in-out;
+                .wrapper-image__link-block{
+                    width: 100%;
+                    padding-top: 15px;
+                    @include flex-space-btw;
+                    transition: all .3s ease-in-out;
+
+                    .link-block__text{
+                        @include font-link;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .wrapper-image__link:hover  .wrapper-image__link-block{
+                background-color: $border-color-btn;
+            }
+        }
+        &-title{
+            padding-top: 60px;
+            display: inline-block;
+            max-width: 275px;
+            text-align: center;
+            
+            .wrapper-title__title{
+                @include title;
+                font-size: 58px;
+            }
+            .wrapper-title__text{
+                margin-top: 30px;
+                margin-bottom: 40px;
+                @include font-text;
+                font-size: 18px;
+            }
+            .wrapper-title__btn{
+               @include button;
+               transition: all .4s ease-in-out;
+               
+               &:hover{
+                background-color: $border-color-btn;
+               }
+            }
+        }
+    }
+}

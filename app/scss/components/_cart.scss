@@ -1,0 +1,201 @@
+.cart{
+    padding-top: 80px;
+    &__wrapper{
+        @include flex-center;
+        gap: 70px;
+        align-items: flex-start;
+        padding-right: 100px;
+
+        .cart-return__link{
+            @include font-link;
+            font-size: 14px;
+            display: inline-block;
+            position: absolute;
+            top:0;
+            left: 98px;
+
+            &::after{
+                position: absolute;
+                content: ' ';
+                bottom: -1px;
+                left: 0;
+                width: 0%;
+                height: 1px;
+                background-color: $primary-color;
+                transition: all .3s ease-in-out;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+            .link__item{
+                transform: scale(1.2);
+                transition: all .3s ease-in-out;
+            }
+        }
+        
+
+        .cart-image-block{
+            display: block;
+            width: 630px;
+            height: 647px;
+            @include bg-options;
+        }
+        .cart-describ-block{
+            padding-top: 50px;
+            display: block;
+            max-width: 370px;
+            &__title-block{
+                display: inline-block;
+                max-width: 275px;
+                .title-block__title{
+                    @include font-link;
+                    font-size: 32px;
+                    color:$primary-color;
+                    line-height: 125%;
+                    margin-bottom: 15px;
+                }
+                .title-block__describ{
+                    @include font-text;
+                    font-size: 16px;
+                    color:$swiper-color-text;
+                }
+                .title-block__text{
+                    @include font-text;
+                    font-size: 16px;
+                    padding: 45px 0px;
+                }
+            }
+            .accordeon{
+                display: block;
+
+                &-slide{
+                   display: block;
+                   border-top: 1px solid $border-color-btn;
+                   
+                    .accordeon-slide-label{
+                        position: relative;
+                        display: block;
+                        padding: 20px 15px 20px 0px;
+                        @include font-link;
+                        font-size: 18px;
+                        cursor: pointer;
+
+                            &::after{
+                                position: absolute;
+                                content: '\271A';
+                                
+                                @include font-link;
+                                opacity: 0.6;
+                                top: 50%;
+                                right: 15px;
+                                transform: translateY(-50%);
+                            }
+
+                    }
+                    &-content{
+                        position: relative;
+                        background-color: #fff; /* Цвет фона контента */
+                        overflow: hidden;
+                        max-height: 0; /* Скрываем контент */
+                        transition: 0.3s;
+
+                        &__text{
+                            padding-bottom: 20px;
+                            @include font-text;
+                            font-size: 14px;
+
+                        }
+                    }
+                  
+                }
+                &-slide:last-child{
+                    border-bottom: 1px solid $border-color-btn;
+                }
+                .accordeon-slide.accordeon-active .accordeon-slide-label::after{
+                    content: "\2014";
+                }
+            }
+            .cart-charakteristc-block{
+                @include flex-center;
+                gap: 17px;
+                justify-content: flex-start;
+                margin-top: 45px;
+                margin-bottom: 56px;
+                @include font-link;
+                font-size: 18px;
+                font-weight: 600;
+                
+                .label__item{
+                    cursor:pointer;
+                    font-family: $text-family;
+                 
+                    .real-radio{
+                     width: 0;
+                     height: 0;
+                     z-index: -1;
+                     opacity: 0;
+                     padding-right: 10px;
+                    }
+                    .custom-radio{
+                        position: relative;
+                        display: inline-block;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 50%;
+                        border: 1px solid $primary-color;
+                        padding-left: 10px;
+
+                        &::before{
+                            display: none;
+                            position: absolute;
+                            content: '';
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: $primary-color;
+                            top:50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                        }
+                      
+                    }
+                    .custom-radio__text{
+                        font-size: 16px;
+                        color: $swiper-color-text;
+                    } 
+                }
+                .real-radio:checked + .custom-radio::before{
+                    display: inline-block;
+                }
+            }
+            .cart-price-block{
+                @include flex-center;
+                gap: 50px;
+                justify-content: flex-start;
+
+                .price{
+                    display: inline-block;
+                    @include font-link;
+                    font-size: 26px;
+                    font-family: $text-family;
+
+                    &__rub{
+                        padding-left: 5px;
+                    }
+                }
+
+                .cart-btn{
+                    @include button;
+                }
+            }
+        }
+    }
+}
+
+  
+
+.accordeon-slide__title-block.accordeon-content-open .accordeon-btn__item:last-child{
+    transform: rotate(180deg);
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}

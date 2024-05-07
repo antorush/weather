@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bd54456b-6ca3-4c97-be77-112c38f3c6e6&lang=ru_RU" type="text/javascript">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<body>
+    <header class="header" data-aos="fade-down" data-aos-offset="200" data-aos-duration="">
+        <div class="container">
+            <div class="header__inner">
+                <a href="" class="logo">
+                    <img src="../images/dist/MAROON.svg" alt="" class="logo__item">
+                </a>
+                <div class="header__inner flex-end">
+                    <nav class="nav-menu">
+                        <ul class="nav-menu-list">
+                            <li class="menu-list__item">
+                                <a href="index2.html" class="menu-list__link link">Каталог</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="index.html" class="menu-list__link link">О нас</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="index3.html" class="menu-list__link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="burger-menu" id="burger" type="button">
+                        <span class="burger-menu__item"></span>
+                        <span class="burger-menu__item"></span>
+                        <span class="burger-menu__item"></span>
+                    </button>
+                    <ul class="log-shop-list">
+                        <a href="registration.html" class="log-shop-list__link-log">
+                            <li class="log-shop-list__item-log" style="background-image: url(../images/dist/login.svg);"></li>
+                        </a>
+                        <a href="" class="log-shop-list__link-shop">
+                            <li class="log-shop-list__item-shop" style="background-image: url(../images/dist/buy.svg);"></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<main class="main">
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__filter-block">
+                <div class="catalog-title-box">
+                    <h1 class="catalog-title-box__title">Каталог</h1>
+                    <button class="catalog-title-box__btn catalog-btn--active" id="btn-fliter" type="button">Фильтр</button>
+                    <button class="catalog-title-box__btn-close" type="button">
+                        <span class="btn-close__item"></span>
+                        <span class="btn-close__item"></span>
+                    </button>
+                </div>
+                 <div class="filter-block__wrapper">
+                     <div class="filter-block-box">
+                         <h4 class="filter-block-box__title">Уход для лица</h4>
+                         <ul class="filter-block-box__menu menu-list-first">
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             
+                             
+                         
+                     
+                         </ul>    
+                     </div>
+                     <div class="filter-block-box">
+                         <h4 class="filter-block-box__title">Уход для кожи</h4>
+                         <ul class="filter-block-box__menu menu-list-first">
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                         </ul>    
+                     </div>
+                   
+                     <div class="filter-block-box">
+                         <h4 class="filter-block-box__title">Уход для тела</h4>
+                         <ul class="filter-block-box__menu menu-list-first">
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                             <li class="menu__item">
+                                 <label class="item-filter" name="radio">
+                                     <input type="checkbox" class="item-filter__input real-radio" name="radio"> 
+                                     <span class="custom-radio"></span>
+                                     <span class="custom-radio__text">крем</span>
+                                 </label>
+                             </li>
+                         </ul>    
+                         <div class="filter-block-box__btns">
+                             <button class="filter-btn" id="btn-accept" type="button">Применить</button>
+                             <button class="filter-btn" id="btn-reset" type="button">Сбросить</button>
+                         </div>
+                     </div>
+                   
+                    
+                 </div>
+            </div>
+            <div class="catalog-grid" data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">
+            
+                    <div class="catalog-grid__item" data-name="high" style="background-image: url(../images/dist/high.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">High</h3>
+                                <span class="item-text-top__price">990 <span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="catalog-grid__item" data-name="rest" style="background-image: url(../images/dist/rest.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Rest</h3>
+                                <span class="item-text-top__price">690<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="catalog-grid__item" data-name="rose" style="background-image: url(../images/dist/rose.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Rose</h3>
+                                <span class="item-text-top__price">890<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item" data-name="Milk" style="background-image: url(../images/dist/milk.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Milk</h3>
+                                <span class="item-text-top__price">790 <span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item" data-name="Paradise" style="background-image: url(../images/dist/paradise.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Paradise</h3>
+                                <span class="item-text-top__price">590<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item" data-name="Sun" style="background-image: url(../images/dist/sun.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Sun</h3>
+                                <span class="item-text-top__price">90<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item" data-name="Violet" style="background-image: url(../images/dist/violet.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Violet</h3>
+                                <span class="item-text-top__price">890<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item" data-name="Clean" style="background-image: url(../images/dist/clean.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Clean</h3>
+                                <span class="item-text-top__price">490<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item" data-name="Coconut" style="background-image: url(../images/dist/coconut.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Coconut</h3>
+                                <span class="item-text-top__price">990 <span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item"data-name="Lavender" style="background-image: url(../images/dist/lavender.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Lavender</h3>
+                                <span class="item-text-top__price">290<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item" data-name="Lotos" style="background-image: url(../images/dist/lotos.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Lotos</h3>
+                                <span class="item-text-top__price">890<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="catalog-grid__item" data-name="Earth" style="background-image: url(../images/dist/earth.png);">
+                        <div class="item-text">
+                            <div class="item-text-top__wrapper">
+                                <h3 class="item-text-top__title">Earth</h3>
+                                <span class="item-text-top__price">90<span class="price__rub">&#x20bd;</span></span>
+                            </div>
+                            <div class="item-text-bot__wrapper">
+                                <p class="item-text-bot__describtion">крем для лица</p>
+                                <span class="item-text-bot__size">50ml</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <ul class="pagination-list">
+                <li class="pagination-list__item">
+                    <a href="" class="pagination-list__link">1</a>
+                </li>
+                <li class="pagination-list__item">
+                    <span class="pagination-list__item-line"></span>
+                </li>
+                <li class="pagination-list__item">
+                    <a href="" class="pagination-list__link">8</a>
+                </li>
+                <div class="pagination-list__nav-btns">
+                    <button class="nav-btns__prev-btn" type="button">
+                        <img src="../images/dist/arrow-left.svg" alt="prev" class="prev-btn__item">
+                    </button>
+                    <button class="nav-btns__next-btn" type="button">
+                        <img src="../images/dist/arrow.svg" alt="next" class="prev-btn__item">
+                    </button>
+                </div>
+            </ul>
+        </div>
+    </section>
+
+<section class="cart">
+    <div class="container container-relative">
+        <div class="cart__wrapper cart-hidden" id="high" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/high.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">High</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="rest" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/rest.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Rest</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="rose" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/rose.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Rose</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Milk" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/milk.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Milk</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Paradise" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/paradise.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Paradise</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Sun" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/sun.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Sun</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Violet" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/violet.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Violet</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Clean" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/clean.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Clean</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Coconut" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/coconut.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Coconut</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Lavender" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/lavender.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Lavender</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Lotos" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/lotos.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Lotos</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart__wrapper cart-hidden" id="Earth" >
+            <a href="index2.html" class="cart-return__link"><span class="link__item">&lt</span> Вернуться к каталогу</a>
+            <div class="cart-image-block" style="background-image: url(../images/dist/earth.png);"></div>
+            <div class="cart-describ-block">
+                <div class="cart-describ-block__title-block">
+                    <h3 class="title-block__title">Earth</h3>
+                    <span class="title-block__describ">крем для лица</span>
+                    <p class="title-block__text">Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+                        Крем равномерно распределяется        по поверхности благодаря легкой текстуре, обеспечивает глубокое увлажнение, регенерацию клеток. </p>
+                </div>
+                <div class="accordeon">
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Состав
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                    <div class="accordeon-slide">
+                        <div class="accordeon-slide-label" data-acord-name="title1" id="accordeon-slide1">
+                            Способ применения
+                        </div>
+                        <div class="accordeon-slide-content">
+                            <p id="title1" class="accordeon-slide-content__text">Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch, Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol, Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-charakteristc-block">
+                    <span class="cart-charakteristc-block__title">Объем:</span>
+                    <label class="label__item">
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        50ml
+                    </label>
+                    <label class="label__item"> 
+                        <input type="radio" class="real-radio">
+                        <span class="custom-radio"></span>
+                        30ml
+                    </label>
+                </div> 
+                <div class="cart-price-block">
+                    <span class="price">890<span class="price__rub">&#x20bd;</span></span>
+                    <button class="cart-btn" type="button">Добавить в корзину</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<section class="sharing">
+    <div class="container">
+        <div class="sharing__wrapper">
+            <div class="sharing-grid">
+                <div class="sharing-grid__box" data-aos="width-animation" data-aos-duration="600" data-aos-delay="400">
+                    <img src="../images/dist/2293486 1.avif" alt="" class="box__item">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/2993554 1.avif" alt="" class="box__item" data-aos="fade" data-aos-duration="900" data-aos-delay="900">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/2693638 2.avif" alt="" class="box__item" data-aos="width-animation-rev" data-aos-duration="700" data-aos-delay="600">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/3397879 1.avif" alt="" class="box__item" data-aos="width-animation" data-aos-duration="700" data-aos-delay="600">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/2693637 1.avif" alt="" class="box__item" data-aos="fade" data-aos-duration="900" data-aos-delay="900">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/2693661 1.avif" alt="" class="box__item" data-aos="width-animation-rev" data-aos-duration="600" data-aos-delay="400">
+                </div>
+            </div>
+            <div class="sharing-text-block" data-aos="fade-left" data-aos-duration="900" data-aos-delay="1100">    
+                <h2 class="sharing-text-block__title">Присоединяйтесь к нам</h2>
+                <p class="sharing-text-block__text">Подпишитесь на наш аккаунт @marooncare
+                    и узнавайте о новиках и акциях первыми</p>
+                <button class="sharing-text-block__btn btn" type="button" id="btn">Подписаться</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map" id="contacts">
+    <div class="container">
+    <div class="map__wrapper">
+        <address class="map-contacts" data-aos="width-animation" data-aos-duration="600" data-aos-delay="400">
+            <h2 class="map-contacts__title">Контакты</h2>
+            <div class="map-contacts__address">
+                <h4 class="address__subtitle">Адрес</h4>
+                <a href="#" class="address__describtion">Санкт-Петербург,
+                    ул. Большая Конюшенная, 19</a>
+            </div>
+            <div class="map-contacts__phone">
+                <h4 class="phone__subtitle">Телефон</h4>
+                <a href="#" class="phone__describtion">+7 (923) 888-90-60</a>
+            </div>
+            <div class="map-contacts__email">
+                <h4 class="email__subtitle">E-mail</h4>
+                <a href="#" class="email__describtion">info@maroon.ru</a>
+            </div>
+            <ul class="social-menu">
+                <a href="" class="social-menu__link" id="facebook" style="background-image: url(../images/dist/facebook.svg);">
+                </a>
+                <a href="" class="social-menu__link" id="instagram" style="background-image: url(../images/dist/instagram.svg);">
+                </a>
+                <a href="" class="social-menu__link" id="twitter" style="background-image: url(../images/dist/twitter.svg);">
+                </a>
+            </ul>
+        </address>
+        <div id="map"  data-aos="width-animation-rev" data-aos-duration="600" data-aos-delay="400"></div>
+    </div>
+ 
+</div>
+</section>
+</main>
+<footer class="footer" data-aos="fade" data-aos-duration="400" data-aos-delay="400">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-center">
+            <a href="#" class="logo">
+                <img src="../images/dist/MAROON.svg" alt="" class="logo__item">
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-menu-list">
+                    <li class="menu-list__item">
+                        <a href="index2.html" class="menu-list__link">Каталог</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#hero" class="menu-list__link">О нас</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="" class="menu-list__link">Магазины</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="index3.html" class="menu-list__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <ul class="social-menu">
+            <a href="#" class="social-menu__link" id="facebook" style="background-image: url(../images/dist/facebook.svg);">
+            </a>
+            <a href="#" class="social-menu__link" id="instagram" style="background-image: url(../images/dist/instagram.svg);">
+            </a>
+            <a href="#" class="social-menu__link" id="twitter" style="background-image: url(../images/dist/twitter.svg);">
+            </a>
+        </ul>
+    </div>
+</div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="../js/main.min.js"></script>
+</body>
+</html>

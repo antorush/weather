@@ -1,0 +1,81 @@
+html, body{
+    width: 100%;
+    height:auto;
+    font-family:$title-family;
+    font-size: 18px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: $bg-color;
+    color:$primary-color;
+}
+.registration-bg{
+    background: linear-gradient(210deg, #73d178, #5e9661, #c6fda2);
+    height: 100vh;
+}
+a{
+    color: $primary-color;
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1562px;
+    width: 100%;
+    padding: 0px 98px;
+    height: auto;
+    margin: 0 auto;
+}
+.container-full{
+    width: 100%;
+    padding: 0px 0px 0px 98px;
+    height: auto;
+    margin: 0 auto;
+}
+.container-relative{
+    position: relative;
+}
+.accordeon-content-hidden{
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-20px);
+    transition: all .4s linear;
+}
+.filter-btn--active{
+    border: 1px solid $primary-color;
+    font-weight: 600;
+ }
+ .catalog-btn--active{
+    border-color:$primary-color;
+ }
+.container-relative{
+    position: relative;
+}
+
+.text--active{
+    color:$primary-color;
+}
+.scroll-hidden{
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+.btn.btn--active{
+    background-color:$border-color-btn;
+}
+.catalog.cart-hidden{
+    display: none;
+}
+.cart__wrapper.cart-hidden{
+    display: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $border-color-btn;
+}
+::-webkit-scrollbar-track{
+    
+    background-color: $primary-color;
+    
+}

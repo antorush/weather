@@ -1,0 +1,83 @@
+.map{
+    padding-top: 140px;
+
+    &__wrapper{
+        @include flex-space-btw;
+        align-items: flex-start;
+        padding:66px 0px 66px 100px;
+        .map-contacts{
+            display: inline-block;
+            max-width: 256px;
+            padding-top: 34px;
+
+            &__title{
+                @include font-link;
+                font-size: 32px;
+
+            }
+            div + div{
+                margin-top: 25px;
+            }
+            &__address{
+                margin-top: 30px;
+                .address__subtitle{
+                   @include font-link;
+                   font-size: 18px;
+                   line-height: 145%;
+                   margin-bottom: 10px;
+                }
+                .address__describtion{
+                    @include font-text;
+                    font-size: 18px;
+                    line-height: 145%;
+                }
+            }
+            &__phone{
+                    .phone__subtitle{
+                        @include font-link;
+                        font-size: 18px;
+                        line-height: 145%;
+                        margin-bottom: 10px;
+                    }
+                    .phone__describtion{
+                        @include font-text;
+                        font-size: 18px;
+                        line-height: 145%;
+                    }
+            }
+            &__email{
+                .email__subtitle{
+                    @include font-link;
+                    font-size: 18px;
+                    line-height: 145%;
+                    margin-bottom: 10px;
+                }
+                .email__describtion{
+                    @include font-text;
+                    font-size: 18px;
+                    line-height: 145%;
+                }
+        }
+        .social-menu{
+                @include flex-center;
+                gap: 30px;
+                justify-content: flex-start;
+                margin-top: 26px;
+
+                &__link{
+                    @include social-item;
+                    transition: all .3s ease-in-out;
+                    &:hover{
+                        transform: translateY(-5px) scale(1.05);
+                        filter: contrast(150%);
+                    }
+                }
+            }
+        }
+        #map{
+            display: block;
+            width: 670px;
+            height: 422px;
+        }
+    }
+}

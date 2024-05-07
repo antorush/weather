@@ -1,0 +1,149 @@
+.header{
+    width: 100%;
+    position: relative;
+    padding-top: 40px;
+    
+    &__inner{
+        @include flex-space-btw;
+
+        .nav-menu{
+
+            &-list{
+                @include flex-center;
+                gap: 35px;
+                transition: all .3s linear;
+
+                .menu-list__link{
+                    position: relative;
+                    padding-bottom: 7px;
+                    @include font-text;
+                    font-size: 16px;
+                    transition: all .4s ease-in-out;
+
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        bottom: 0;
+                        left: 0;
+                        width: 0%;
+                        opacity: 0;
+                        height: 1px;
+                        background-color: $primary-color;
+                        transition: all .4s ease-in-out;
+                    }
+                    &:hover::after{
+                        opacity: 1;
+                        width: 100%;
+                        
+                    }
+                }
+            }
+        }
+        .burger-menu{
+            position: relative;
+            display: none;
+            width: 23px;
+            height: 20px;
+            border-radius: 1px;
+            transition: all .3s ease-in-out;
+
+            &__item{
+                position: absolute;
+                top: 0%;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $primary-color;
+                transition: all .3s ease-in-out;
+            }
+            &__item:nth-child(2){
+                top:50%;
+                left: 0;
+                transition: all .3s ease-in-out;
+
+            }
+            &__item:nth-child(3){
+                top:100%;
+                left: 0;
+                transition: all .3s ease-in-out;
+                
+            }
+        }
+        .log-shop-list{
+            @include flex-center;
+            gap: 30px;
+
+                &__link-log{
+
+                    .log-shop-list__item-log{
+                        display: block;
+                        width: 16px;
+                        height: 21px;
+                        @include bg-options;
+                        background-size: contain;
+                        transition: all .3s ease-in-out;
+                
+                        &:hover{
+                            transform: translateY(-5px) scale(1.05);
+                            filter: contrast(150%);
+                        }
+                    }
+                }
+                &__link-shop{
+
+                    .log-shop-list__item-shop{
+                        display: block;
+                        width: 18px;
+                        height: 21px;
+                        @include bg-options;
+                        background-size: contain;
+                        transition: all .3s ease-in-out;
+                
+                        &:hover{
+                            transform: translateY(-5px) scale(1.05);
+                            filter: contrast(150%);
+                        }
+                    }
+                }
+        }
+    }
+}
+.link--active{
+    text-transform: uppercase;
+    
+    &::after{
+      width: 100%;
+    }
+  }
+.flex-end{
+    @include flex-center;
+    gap: 50px;
+}
+
+.header.open .burger-menu{
+    display: block;
+}
+.header.open .burger-menu__item:nth-child(1){
+    top:50%;
+    transform: rotate(45deg);
+}
+.header.open .burger-menu__item:nth-child(2){
+    transform: rotate(-45deg);
+}
+.header.open .burger-menu__item:nth-child(3){
+    width: 0%;
+}
+.burger-menu:hover{
+    transform: scale(1.1);
+}
+.burger-menu:hover .burger-menu__item:nth-child(1), .burger-menu:hover .burger-menu__item:nth-child(2){
+    height: 3px;
+} 
+.burger-menu__item:nth-child(1),.burger-menu__item:nth-child(3){
+    transition: all .3s linear;
+}
+
+.burger-menu:hover .burger-menu__item:nth-child(3){
+    width: 0%;
+}
+

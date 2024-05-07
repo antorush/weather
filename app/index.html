@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=bd54456b-6ca3-4c97-be77-112c38f3c6e6&lang=ru_RU" type="text/javascript">
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.min.css">
+</head>
+<body>
+    <header class="header" data-aos="fade-down" data-aos-offset="200" data-aos-duration="">
+        <div class="container">
+            <div class="header__inner">
+                <a href="" class="logo">
+                    <img src="../images/dist/MAROON.svg" alt="" class="logo__item">
+                </a>
+                <div class="header__inner flex-end">
+                    <nav class="nav-menu">
+                        <ul class="nav-menu-list">
+                            <li class="menu-list__item">
+                                <a href="index2.html" class="menu-list__link link">Каталог</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="index.html" class="menu-list__link link">О нас</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="index3.html" class="menu-list__link link">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="burger-menu" id="burger" type="button">
+                        <span class="burger-menu__item"></span>
+                        <span class="burger-menu__item"></span>
+                        <span class="burger-menu__item"></span>
+                    </button>
+                    <ul class="log-shop-list">
+                        <a href="registration.html" class="log-shop-list__link-log">
+                            <li class="log-shop-list__item-log" style="background-image: url(../images/dist/login.svg);"></li>
+                        </a>
+                        <a href="" class="log-shop-list__link-shop">
+                            <li class="log-shop-list__item-shop" style="background-image: url(../images/dist/buy.svg);"></li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<main class="main">
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__wrapper">
+                    <div class="hero__wrapper-image" data-aos="fade-right" data-aos="450" data-aos-delay="300">
+                        <div class="wrapper-image__item" style="background-image: url(../images/dist/Rectangle\ 5.avif);"></div>
+                        <a href="" class="wrapper-image__link">
+                            <div class="wrapper-image__link-block">
+                                <span class="link-block__text">Уход для лица</span>
+                                <img src="../images/dist/arrow.svg" alt="" class="icon-item">
+                            </div>
+                        </a>
+                    </div>
+                <div class="hero__wrapper-title" data-aos="fade-down" data-aos="450" data-aos-delay="400">
+                    <h1 class="wrapper-title__title">MAROON</h1>
+                    <p class="wrapper-title__text">Натуральная косметика
+                        для бережного ухода за кожей</p>
+                    <button class="wrapper-title__btn btn" type="button" id="btn">Подробнее</button>
+                </div>
+                    <div class="hero__wrapper-image" data-aos="fade-left" data-aos="450" data-aos-delay="300" data-aos-offset="120">
+                        <div class="wrapper-image__item" style="background-image: url(../images/dist/Rectangle\ 6.avif);"></div>
+                        <a href="" class="wrapper-image__link">
+                            <div class="wrapper-image__link-block">
+                                <span class="link-block__text">Уход для лица</span>
+                                <img src="../images/dist/arrow.svg" alt="" class="icon-item">
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section class="bessellers">
+  <div class="container-full">
+        <div class="bessellers__wrapper">
+            <div class="bessellers-text-box" data-aos="fade-right" data-aos-duration="300" data-aos-delay="200">
+                <h2 class="bessellers-text-box__title">Бестселлеры</h2>
+                <p class="bessellers-text-box__text">Легендарные продукты,
+                    завоевавшие любовь
+                    наших клиентов</p>
+                <button class="bessellers-text-box__btn btn" type="button" id="btn">Смотреть все</button>
+            </div>
+            <div class="swiper bessellers-goods" data-aos="fade-left" data-aos-duration="300" data-aos-delay="200">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper bessellers-goods__wrapper">
+                  <!-- Slides -->
+                    <div class="swiper-slide bessellers-goods__item" style="background-image: url(../images/dist/cream.avif);">
+                        <div class="item-text-box">
+                            <h4 class="item-text-box__title">High</h4>
+                            <p class="item-text-box__describtion">крем для лица</p>
+                            <a href="index2.html" class="item-text-box__link">Подробнее</a>
+                        </div>
+                    </div>
+                  <div class="swiper-slide bessellers-goods__item" style="background-image: url(../images/dist/cream2.avif);">
+                    <div class="item-text-box">
+                        <h4 class="item-text-box__title">Rest</h4>
+                        <p class="item-text-box__describtion">крем для лица</p>
+                        <a href="#rest" class="item-text-box__link">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bessellers-goods__item" style="background-image: url(../images/dist/cream3.avif);">
+                    <div class="item-text-box">
+                        <h4 class="item-text-box__title">Rose</h4>
+                        <p class="item-text-box__describtion">крем для лица</p>
+                        <a href="#rose" class="item-text-box__link">Подробнее</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide bessellers-goods__item" style="background-image: url(../images/dist/f2b6c7383e64940d6fdd415ce9fbb3dc.avif);">
+                    <div class="item-text-box">
+                        <h4 class="item-text-box__title">Milk</h4>
+                        <p class="item-text-box__describtion">крем для лица</p>
+                        <a href="#Milk" class="item-text-box__link">Подробнее</a>
+                    </div>
+                  </div>
+                    <!-- Slides -->
+                    <div class="swiper-slide bessellers-goods__item" style="background-image: url(../images/dist/cream.avif);">
+                        <div class="item-text-box">
+                            <h4 class="item-text-box__title">High</h4>
+                            <p class="item-text-box__describtion">крем для лица</p>
+                            <a href="#high" class="item-text-box__link">Подробнее</a>
+                        </div>
+                    </div>
+                  <div class="swiper-slide bessellers-goods__item" style="background-image: url(../images/dist/cream2.avif);">
+                    <div class="item-text-box">
+                        <h4 class="item-text-box__title">Milk</h4>
+                        <p class="item-text-box__describtion">крем для лица</p>
+                        <a href="#Milk" class="item-text-box__link">Подробнее</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- If we need navigation buttons -->
+                <div class="navigation-block">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+              
+              </div>
+        </div>
+      </div>
+</section>
+<section class="banner" style="background-image: url(../images/dist/банер\ 1.avif);"  data-aos="fade" data-aos-duration="300" data-aos-delay="200">
+    <div class="container container-relative">
+        <div class="banner-text-block" data-aos="fade-left" data-aos-duration="300" data-aos-delay="400">
+            <h4 class="banner-text-block__title">Встречайте весну
+                вместе с нами</h4>
+            <p class="banner-text-block__text">Попробуйте новую коллекцию ухаживающих средств для лица с SPF защитой</p>
+            <button class="banner-text-block__btn btn" type="button" id="btn">Подробнее</button>
+        </div>
+    </div>
+</section>
+<section class="offers">
+    <div class="container">
+        <div class="offers__wrapper">
+            <div class="offers-text-block" data-aos="fade-right" data-aos-duration="600" data-aos-delay="400">
+                <h2 class="offers-text-block__title">Индивидуальный уход</h2>
+                <p class="offers-text-block__text">Не всегда очевидно, какие элементы и минералы необходимы коже,         а многочисленные эксперименты с разными средствами только ухудшают ее качество.</p>
+                <p class="offers-text-block__text"> Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ жизни, место жительства и другие факторы.</p>
+                <button class="offers-text-block__btn btn" type="button" id="btn">Заполнить анкету</button>
+            </div>
+            <div class="offers-image-block" data-aos="fade-left" data-aos-duration="500" data-aos-delay="800">
+                <img src="../images/dist/Rectangle 38.avif" alt="" class="offer-image-block__item">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="history" style="background-image: url(../images/dist/600693-PMYQNV-922\ 1.avif);" data-aos="width-animation" data-aos-duration="500" data-aos-delay="400">
+    <div class="container">
+        <div class="history-text-block" data-aos="fade-down" data-aos-duration="700" data-aos-delay="800">
+            <h2 class="history-text-block__title">“Мы стремимся сделать уход за кожей доступным
+                и приятным ритуалом для всех, кто хочет
+                заботиться о себе и своем теле”  
+            </h2>
+            <button class="history-text-block__btn btn" data-aos="fade-left" data-aos-duration="700" data-aos-delay="800" type="button" id="btn">Наша история</button>
+        </div>
+    </div>
+</section>
+<section class="sharing">
+    <div class="container">
+        <div class="sharing__wrapper">
+            <div class="sharing-grid">
+                <div class="sharing-grid__box" data-aos="width-animation" data-aos-duration="600" data-aos-delay="400">
+                    <img src="../images/dist/2293486 1.avif" alt="" class="box__item">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/2993554 1.avif" alt="" class="box__item" data-aos="fade" data-aos-duration="900" data-aos-delay="900">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/2693638 2.avif" alt="" class="box__item" data-aos="width-animation-rev" data-aos-duration="700" data-aos-delay="600">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/3397879 1.avif" alt="" class="box__item" data-aos="width-animation" data-aos-duration="700" data-aos-delay="600">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/2693637 1.avif" alt="" class="box__item" data-aos="fade" data-aos-duration="900" data-aos-delay="900">
+                </div>
+                <div class="sharing-grid__box">
+                    <img src="../images/dist/2693661 1.avif" alt="" class="box__item" data-aos="width-animation-rev" data-aos-duration="600" data-aos-delay="400">
+                </div>
+            </div>
+            <div class="sharing-text-block" data-aos="fade-left" data-aos-duration="900" data-aos-delay="1100">    
+                <h2 class="sharing-text-block__title">Присоединяйтесь к нам</h2>
+                <p class="sharing-text-block__text">Подпишитесь на наш аккаунт @marooncare
+                    и узнавайте о новиках и акциях первыми</p>
+                <button class="sharing-text-block__btn btn" type="button" id="btn">Подписаться</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map" id="contacts">
+    <div class="container">
+    <div class="map__wrapper">
+        <address class="map-contacts" data-aos="width-animation" data-aos-duration="600" data-aos-delay="400">
+            <h2 class="map-contacts__title">Контакты</h2>
+            <div class="map-contacts__address">
+                <h4 class="address__subtitle">Адрес</h4>
+                <a href="#" class="address__describtion">Санкт-Петербург,
+                    ул. Большая Конюшенная, 19</a>
+            </div>
+            <div class="map-contacts__phone">
+                <h4 class="phone__subtitle">Телефон</h4>
+                <a href="#" class="phone__describtion">+7 (923) 888-90-60</a>
+            </div>
+            <div class="map-contacts__email">
+                <h4 class="email__subtitle">E-mail</h4>
+                <a href="#" class="email__describtion">info@maroon.ru</a>
+            </div>
+            <ul class="social-menu">
+                <a href="" class="social-menu__link" id="facebook" style="background-image: url(../images/dist/facebook.svg);">
+                </a>
+                <a href="" class="social-menu__link" id="instagram" style="background-image: url(../images/dist/instagram.svg);">
+                </a>
+                <a href="" class="social-menu__link" id="twitter" style="background-image: url(../images/dist/twitter.svg);">
+                </a>
+            </ul>
+        </address>
+        <div id="map"  data-aos="width-animation-rev" data-aos-duration="600" data-aos-delay="400"></div>
+    </div>
+ 
+</div>
+</section>
+</main>
+<footer class="footer" data-aos="fade" data-aos-duration="400" data-aos-delay="400">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__inner-center">
+            <a href="#" class="logo">
+                <img src="../images/dist/MAROON.svg" alt="" class="logo__item">
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-menu-list">
+                    <li class="menu-list__item">
+                        <a href="index2.html" class="menu-list__link">Каталог</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#hero" class="menu-list__link">О нас</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="" class="menu-list__link">Магазины</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="index3.html" class="menu-list__link">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <ul class="social-menu">
+            <a href="#" class="social-menu__link" id="facebook" style="background-image: url(../images/dist/facebook.svg);">
+            </a>
+            <a href="#" class="social-menu__link" id="instagram" style="background-image: url(../images/dist/instagram.svg);">
+            </a>
+            <a href="#" class="social-menu__link" id="twitter" style="background-image: url(../images/dist/twitter.svg);">
+            </a>
+        </ul>
+    </div>
+</div>
+</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+    <script src="../js/main.min.js"></script>
+</body>
+</html>

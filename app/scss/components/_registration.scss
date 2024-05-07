@@ -1,0 +1,149 @@
+.content-registration{
+    @include flex-center;
+    width: 100%;
+    height: 100vh;
+
+    .form-registration{
+        display: block;
+        position: relative;
+        width: 500px;
+        padding: 80px;
+        z-index: 20;
+        height: auto;
+        background:linear-gradient(45deg, rgba(#4ad388,0.6), rgba(#dcffd7,0.8));
+        border-radius: 0px 40px 0px 40px;
+        box-shadow: 5px 5px 30px #4ad388;
+        backdrop-filter: blur(15px);
+
+        &__title{
+            @include title;
+            font-size: clamp(40px, 5vw, 48px);
+            padding-bottom: 20px;
+            color:rgba($primary-color, 0.3);
+        }
+        &__item{
+            display: block;
+            
+            .input__item{
+                width: 100%;
+                display: inline-block;
+                padding: 10px 15px;
+                border-radius: 0px 15px 0px 15px;
+                border: none;
+                background-color:rgba($bg-color, 0.2);
+                backdrop-filter: blur(5px);
+
+                &::placeholder{
+                    text-transform: uppercase;
+                    @include font-link;
+                    color:rgba($primary-color, 0.7);
+                    opacity: 0.7;
+                    transition: all .3s ease-in-out;
+                }
+                &:focus{
+                    border: 2px solid $primary-color;
+                    background-color:rgba($bg-color, 0.5);
+                    box-shadow: 5px 5px 30px #1d5234;
+                    transform: scale(1.05);
+                    transition: all .3s ease-in-out;
+                }
+                &:focus.input__item::placeholder{
+                    opacity: 1;
+                    color:$primary-color;
+                }
+            }
+        }
+        .checkbox-label{
+            display: block;
+            cursor: pointer;
+            margin: 20px 0px;
+            .real-check{
+                width: 0;
+                height: 0;
+                z-index: -1;
+            }
+            .custom-check{
+                position: relative;
+                display: inline-block;
+                width: 18px;
+                height: 18px;
+                background-color: white;
+                border-radius: 5px;
+                margin-right: 10px;
+
+                    &::before{
+                        position: absolute;
+                        content: ' ';
+                        display: none;
+                        top:50%;
+                        width: 15px;
+                        height: 15px;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        @include bg-options;
+                        background-image: url("../../images/dist/check_mark_black_outline_wws7o8gelp7q.svg")
+                    }
+            }
+            .real-check:checked + .custom-check::before{
+                display: inline-block;
+            }
+            .real-check:focus + .custom-check{
+                border: 1px solid $primary-color;
+                border-radius: 5px;
+            }
+        }
+        &__btn{
+            @include button;
+            border: 1px solid $bg-color;
+            border-radius: 0px 15px 0px 15px;
+            transition: all .3s ease-in-out;
+            color:$bg-color;
+                &:hover{
+                    background:$primary-color;
+                    border: 1px solid $bg-color;
+                    color:$bg-color;
+                  }
+                &:focus{
+                    border: 2px solid $primary-color;
+                    color:rgba($primary-color, 0.8);
+                }
+        }
+        div + div{
+            margin-top: 20px;
+        }
+        .return{
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            display: inline-block;
+            @include font-text;
+            font-size: 14px;
+            padding-bottom: 4px;
+            transition: all .3s linear;
+
+                &::after{
+                    position: absolute;
+                    content: ' ';
+                    width: 0%;
+                    height: 1px;
+                    background-color: $primary-color;
+                    bottom: 0;
+                    left: 0;
+                    transition: all .3s linear;
+                }
+            &:hover::after{
+                width: 100%;
+            }
+        }
+      
+    }
+    .video-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}

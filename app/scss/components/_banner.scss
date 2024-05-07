@@ -1,0 +1,39 @@
+.banner{
+    position: relative;
+    width: 100%;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    
+        &-text-block{
+            position: absolute;
+            right: 290px;
+            top:80px;
+            display: inline-block;
+            max-width: 285px;
+            width: 100%;
+            text-align: center;
+
+            
+            &__title{
+                @include font-link;
+                font-size: 32px;
+                line-height: 125%;
+            }
+            &__text{
+                @include font-text;
+                margin: 30px 0px 40px 0px;
+                line-height: 145%;
+                font-size: 18px;
+            }
+            &__btn{
+                @include button;
+                transition: all .4s ease-in-out;
+                &:hover{
+                 background-color: $border-color-btn;
+                }
+            }
+        }
+}

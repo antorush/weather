@@ -1,0 +1,30 @@
+.history{
+    @include bg-options;
+    background-size: cover;
+    width: 100%;
+    height: 435px;
+    @include flex-center;
+    &-text-block{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        padding: 120px 0px;
+        text-align: center;
+        max-width: 790px;
+
+        &__title{
+            @include font-link;
+            font-size: 32px;
+            line-height: 120%;
+            margin-bottom: 50px;
+        }
+        &__btn{
+            @include button;
+            padding: 13px 26px 15px 26px;
+            transition: all .4s ease-in-out;
+            &:hover{
+             background-color: $border-color-btn;
+            }
+        }
+    }
+}
